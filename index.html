@@ -1,194 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Bakery Shop Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ROSA- Restaurant</title>
-    <meta name="description" content="ROSA is an enchanting Parallax Restaurant WordPress Theme that allows you to tell your story in an enjoyable way, perfect for restaurants or coffee shops.">
-    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
-    <link rel="shortcut icon" href="rosa-favicon.png">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+       <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1489836162/smaller_size_logo_wigzr1.png"></img>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
-    <!--Fonts-->
-
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!--FontAwesome-->
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body class="stop-scroll">
-  <div class="loader-wrap">
-      <div class="loader">
-          <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span>
-      </div>
-  </div>
-  <div class="dots">
-      <div class="active one" data-x="header"></div>
-      <div class="two" data-x=".recipes"></div>
-      <div class="three" data-x=".fixed-image"></div>
-  </div>
-  <header>
-      <nav>
-          <div class="logo">
-              <a href="index.html"><img src="rosa-white.png" alt="Rosa Logo"></a>
-          </div>
-          <div class="toggle">
-              <span class="first"></span>
-              <span class="middle"></span>
-              <span class="last"></span>
-          </div>
-          <div class="navigation-bar">
-              <ul>
-                  <li class="active"><a href="index.html">Home<span class="underline"></span></a></li>
-                  <li><a href="#">Reservations<span class="underline"></span></a></li>
-                  <li><a href="#">Menu<span class="underline"></span></a></li>
-                  <li><a href="#">Blog<span class="underline"></span></a></li>
-                  <li><a href="#">Features<span class="underline"></span></a></li>
-                  <li><a href="#">Shop<span class="underline"></span></a></li>
-                  <li><a href="#">Contact<span class="underline"></span></a></li>
-              </ul>
-          </div>
-      </nav>
-      <div class="text">
-          <h2>Welcome</h2>
-          <h1>THE ROSA</h1>
-          <div class="arrow">
-              <span class="left"></span>
-              <i class="fas fa-asterisk"></i>
-              <span class="right"></span>
-          </div>
-          <span>Ready To Be Opened</span>
-          <div class="button"><button>Explore</button></div>
-      </div>
-      <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
-      <div class="arrow-down">
-      </div>
-  </header>
-  <div class="about-us">
-      <div class="text">
-          <h2>Discover</h2>
-          <h3>Our Story</h3>
-          <div><i class="fas fa-asterisk"></i></div>
-          <p>Rosa is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
-          <div><a class="a-CTA" href="#">About Us</a></div>
-      </div>
-      <div class="image-container">
-          <div class="image image1">
-              <img src="photo-1.jpg" alt="Food Photo">
-          </div>
-          <div class="image image2">
-              <img src="photo-2.jpg" alt="Food Photo">
-          </div>
-      </div>
-  </div>
-  <div class="recipes">
-      <div class="image"></div>
-      <div class="text">
-          <h2>Tasteful</h2>
-          <h3>Recipes</h3>
-      </div>
-  </div>
-  <div class="menu">
-      <div class="box-model">
-          <i class="fas fa-times fa-2x close"></i>
-          <div class="arrow">
-              <div class="arrow arrow-right"></div>
-              <div class="arrow arrow-left"></div>
-          </div>
-          <div class="box-image-container">
-              <div class="box-image">
-                  <img src=""  alt="Food Photo">
-              </div>
-          </div>
-      </div>
-      <div class="menu-image-container">
-          <div class="image active">
-              <img src="thumb-1.jpg" alt="Food Photo">
-          </div>
-          <div class="image">
-              <img src="thumb-2.jpg" alt="Food Photo">
-          </div>
-          <div class="image">
-              <img src="thumb-3.jpg" alt="Food Photo">
-          </div>
-          <div class="image">
-              <img src="thumb-4.jpg" alt="Food Photo">
-          </div>
-      </div>
-      <div class="text">
-          <h2>Discover</h2>
-          <h3>Menu</h3>
-          <div><i class="fas fa-asterisk"></i></div>
-          <p>For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
-          <div><a class="a-CTA" href="#">View The Full Menu</a></div>
-      </div>
-  </div>
-  <div class="fixed-image">
-      <div class="text">
-          <h2>The Perfect</h2>
-          <h3>Blend</h3>
-      </div>
-  </div>
-  <div class="reservation">
-      <div class="text">
-          <h2>Culinary</h2>
-          <h3>Delight</h3>
-          <div><i class="fas fa-asterisk"></i></div>
-          <p>We promise an intimate and relaxed dining experience that offers something different to local and foreign patrons and ensures you enjoy a memorable food experience every time.</p>
-          <div><a class="a-CTA" href="#">Make a Reservation</a></div>
-      </div>
-      <div class="image-container">
-          <div class="image image1">
-              <img src="bacon-1.jpg" alt="Food Photo">
-          </div>
-          <div class="image image2">
-              <img src="bacon-2.jpg" alt="Food Photo">
-          </div>
-      </div>
-  </div>
-  <footer>
-      <div class="text">
-          <h2>ABOUT ROSA</h2>
-          <div><i class="fas fa-asterisk"></i></div>
-          <p>ROSA is an enchanting and easy-to-use parallax Restaurant WordPress theme that allows you to tell your story in a dynamic, narrative and enjoyable way, making it perfect for restaurants, bakeries, bars or coffee shops.</p>
-      </div>
-      <div class="contact-container">
-        <div class="social-media">
-            <h3>Follow Along</h3>
-            <div class="links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+<div class="container content">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel">
+        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490170457/apple-and-almond-cake_i12bux.jpg" class="img-thumbnail" alt="Image">
+        <div class="box">
+          <h1 id="content1-headline1">Cakes</h1>
         </div>
-          <div class="newsletter">
-            <h3>NewsLetter</h3>
-              <form method="post">
-                  <input type="email" name="email" placeholder="Type Your Email">
-                  <i class="fas fa-envelope"></i>
-              </form>
-          </div>
+
       </div>
-  </footer>
-  <div class="copyright">
-      <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
-      <i class="fas fa-angle-double-up arrow-up"></i>
-      <ul class="info">
-          <li>© ROSA 2023</li>
-          <li>27 Hitex Square, Hyderabad</li>
-          <li>Tel: 71494563</li>
-          <li>Handcrafted with love by <a href="#">Nadimatla Shashank</a></li>
-      </ul>
-      <ul class="CTA">
-          <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
-          <li><a href="#">CONTACT THE TEAM</a></li>
-      </ul>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel">
+        <a href="#"><img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245951/gluten-free-bread-rolls-nut-free-bread-rolls-pale-pete-recipes-paleo-way-seed-rolls_lthh5a.jpg" class="img-thumbnail">
+        <div class="box">
+          <h1 id="content1-headline2">Gluten free</h1>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel">
+      <a href="#"><img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245830/Gluten_Free_Bread_6_-_Copy_rtbcqq.jpg" class="img-thumbnail" alt="Image">
+        <div class="box">
+          <h1 id="content1-headline3">Bread</h1>
+        </div>
+        </a></div>
+    </div>
   </div>
-  <script src="script.js"></script>
-</body>
+</div>
+
+<div class="container">
+  <div class="row row-eq-height">
+    <div class="col-sm-5 content2">
+      <p id="content2-1">Here at The Home Bakery, baking is the passion. Come and visit - your taste buds will thank you!</p>
+    </div>
+    <div class="col-sm-2">
+      <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490342409/dsc_0114_hgqgai.jpg" class="img-circle">
+    </div>
+    <div class="col-sm-5 content2">
+      <p id="content2-2">We use only the finest and freshest ingredients to create pastries that will warm your heart.</p>
+    </div>
+  </div>
+</div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490351456/carousel1.jpg">
+        <div class="carousel-caption">
+          <h3>100% Homemade</h3>
+          <p>We make pastries at home using 100% natural ingredients</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276719/carousel2_zxje9g.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Make order</h3>
+          <p>Call us and we will delivery fresh pastries to your home</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276801/carousel3_heh2hy.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>100% Homemade</h3>
+          <p>We make pastries at home using 100% natural ingredients</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276736/carousel4_iuwmrn.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Make order</h3>
+          <p>Call us and we will delivery fresh pastries to your home</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- -->
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1 id="footer1">Shop online</h1>
+      <ul class="footer-links">
+        <li>Grab & Go In-store Pick Up</li>
+        <li>Order Baked Goods</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h1 id="footer2">Our menu</h1>
+      <ul class="footer-links">
+        <li>Explore our menu</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h1 id="footer3">About</h1>
+      <ul class="footer-links">
+        <li>FAQs</li>
+        <li>Store polisy</li>
+      </ul>
+    </div>
+</footer>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js'></script>
+    <script src="script.js"></script>
+  </body>
 </html>
